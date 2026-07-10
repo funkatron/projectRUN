@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://projectrun.example/schemas/catalog-item.schema.json",
+  "title": "Project RUN Catalog Item",
+  "type": "object",
+  "required": ["id", "record_type", "title", "verification_status", "record_history"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+    "record_type": {"type": "string"},
+    "title": {"type": "string", "minLength": 1},
+    "date": {"type": ["string", "null"]},
+    "publication": {"type": "object", "additionalProperties": true},
+    "creators": {"type": "array", "items": {"type": ["string", "object"]}},
+    "platforms": {"type": "array", "items": {"type": "string"}},
+    "identifiers": {"type": ["array", "object"]},
+    "physical": {"type": "object", "additionalProperties": true},
+    "provenance": {"type": "object", "additionalProperties": true},
+    "stories": {"type": "array", "items": {"type": "object", "additionalProperties": true}},
+    "subjects": {"type": "array", "items": {"type": "string"}},
+    "related": {"type": "array", "items": {"type": ["string", "object"]}},
+    "external_resources": {"type": "array", "items": {"type": "object", "additionalProperties": true}},
+    "media": {"type": ["array", "object"]},
+    "verification_status": {
+      "type": "string",
+      "enum": ["provisional", "partially_verified", "verified"]
+    },
+    "notes": {"type": ["string", "array"]},
+    "record_history": {
+      "type": "object",
+      "required": ["created"],
+      "properties": {
+        "created": {"type": "string"},
+        "updated": {"type": ["string", "null"]},
+        "source": {"type": ["string", "null"]}
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}
