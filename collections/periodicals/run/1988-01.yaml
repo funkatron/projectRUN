@@ -1,0 +1,43 @@
+id: run-1988-01
+record_type: periodical_issue
+title: RUN — January 1988
+date: 1988-01
+publication:
+  title: RUN
+  publisher: CW Communications/Peterborough
+  frequency: monthly
+platforms:
+  - Commodore 64
+  - Commodore 128
+identifiers: []
+physical:
+  format: magazine
+  copy_count: 1
+  condition: null
+  completeness: null
+  packaging: none
+  storage_location: private
+provenance:
+  acquisition_date: null
+  acquisition_source: null
+  ownership_notes: Part of the Project RUN personal magazine collection.
+stories: []
+subjects:
+  - home computing
+  - Commodore
+  - computer magazines
+related: []
+external_resources: []
+media:
+  planned:
+    - front-cover.jpg
+    - back-cover.jpg
+    - spine.jpg
+verification_status: provisional
+notes:
+  - The issue identity and publication details require comparison with the physical copy.
+  - Add cover images, condition, contents, provenance, and an Internet Archive relationship after verification.
+record_history:
+  created: 2026-07-09
+  updated: 2026-07-09
+  source: Reconstructed from prior Project RUN planning.
